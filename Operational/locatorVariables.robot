@@ -1,7 +1,7 @@
 *** Variables ***
 ${url} =  https://flipkart.com/
 ${brows} =  chrome
-${brows1} =  firefox
+#firefox  chrome
 ${Expected_homePage} =  Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
 ${home_screen_cart} =  xpath=//span[contains(text(),'Cart')]
 ${cart_empty} =  xpath=//div[contains(text(),'Your cart is empty!')]

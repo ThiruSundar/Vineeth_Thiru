@@ -19,3 +19,5 @@ User should be able to add the product to the cart
     Click on the desired product
     Verify Product page Title
     Enter pincode to enable add to cart button
+
+

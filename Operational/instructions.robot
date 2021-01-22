@@ -11,7 +11,6 @@ Open Flipkart URL through browser
     sleep  2s
     Verify WebPage title  ${Expected_homePage}
 
-
 Log into flipkart using phone number and password
     Input Text  xpath=//input[@type='text' and @class='_2IX_2- VJZDxU']  9500158051
     Input Password  xpath=//input[@type='password']  royalenfield
@@ -38,15 +37,17 @@ Filter with reviews for 4 star and above
     Wait Until Element Is Visible  ${review}
     Click Element  ${review}
 Click on the desired product
-    Scroll Element Into View  ${product}
+    #Scroll Element Into View  ${product}
     Wait Until Element Is Visible  ${product}
     Click Element  ${product}
 Verify Product page Title
-    Select Window  ${Expected_product_title}
+    Switch Window  NEW
     sleep  2s
     Verify WebPage title  ${Expected_product_title}
+    
 
 Enter pincode to enable add to cart button
+    Click Element  ${pincode}
     Press Keys  ${pincode}  560072
     Click Element  ${check_button_pincode}
     sleep  5s
